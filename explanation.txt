@@ -1,0 +1,7 @@
+1. read the file to see how it is organised and report it - meaning read each column X, Y, Z and find a pattern how the data is organised. In my example you can see that Z is a f(X,Y) and that for k(i) Y is f(Xk) where k=1, for k(i) y(k(i))=y(k(i-1))+1, the same X is increasing by 1 as well.
+2. when you recognise that the X is increasing by 1 for the same Y you need to record how many X there are for every Y, this will give you the number of columns of XY points. Then you need to get the number of rows which is the number of different Y.
+3. When you have number of rows and columns of XY points then you report the distance between X and Y, if it is not constants than you say from ZZ to KK distance is TT
+4. if the X and Y are large numbers user might want to subtract all numbers to a constant to get smaller numbers. That is why you report MIN, MAX and AVERAGE of each column. User than might decide to normalise all points from the central X or Max Y, or any combination.
+
+please find attached sketch. You can see if you organize points in XY plane you read the spacing in X and Y direction so the user can see what other spacing to chose. In the sketch user chose a space of 3 and all other points except the ones circled should be deleted.
+I would suggest to start the spacing from the centre point in the XY plane like I did in with yellow to avoid situations what if there is only one point. 
